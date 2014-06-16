@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'rowoco'
+tagline:          'technology doesn''t have to be hard'
+description:      'providing technology consulting and software development to enterprises in western connecticut'
+url:              http://rorywoods.github.io
+
+author:
+  name:           'rory woods'
+  url:            https://twitter.com/rorywoods
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/rorywoods/rorywoods.github.io
