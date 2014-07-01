@@ -6,9 +6,9 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            'rowoco'
-tagline:          'technology doesn''t have to be hard'
-description:      'providing technology consulting and software development to enterprises in western connecticut'
+title:            'rowo.co'
+tagline:          'tech made simple'
+description:      'Rory Woods Consulting'
 url:              http://rorywoods.github.io
 
 author:
