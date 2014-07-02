@@ -1,24 +1,3 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
-
-# Setup
-title:            'rowo.co'
-tagline:          'tech made simple'
-description:      'Rory Woods Consulting'
-url:              http://rorywoods.github.io
-
-author:
-  name:           'rory woods'
-  url:            https://twitter.com/rorywoods
-
-paginate:         5
-
-# Custom vars
-version:          2.0.0
-
-github:
-  repo:           https://github.com/rorywoods/rorywoods.github.io
+name: Rory Woods Consulting 
+markdown: redcarpet
+pygments: true

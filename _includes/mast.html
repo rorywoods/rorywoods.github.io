@@ -1,0 +1,39 @@
+{%  assign link_class = "" %}
+{% if page.url == "/index.html" %}
+{% assign link_class = "smoothScroll" %}
+{% endif %}
+    <header class="header-fixed">
+      <div class="container">
+        <div class="row">
+
+          <div id="logo" class="col-xs-6 col-sm-12 col-md-3 text-center-sm text-left-xs">
+            <a href="index.html"><img src="logo.png" class="img-responsive" alt="logo" title="logo"></a>
+          </div> <!-- /logo -->
+
+          <div id="menu" class="col-xs-6 col-sm-12 col-md-9">
+            <nav class="navbar main-menu" role="navigation">
+              <!-- Menu button for mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">menu</button>
+              </div>
+          
+              <!-- Navigation links -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-right navbar-nav">
+                  <li class="active">
+		      <a class="{{ link_class }}" href="index.html#highlighted">Home</a>
+                  </li>
+                  <li><a class="{{ link_class }}" href="index.html#services">Services</a></li>
+                  <li><a class="{{ link_class }}" href="index.html#portfolio">Portfolio</a></li>
+                  <li><a class="{{ link_class }}" href="index.html#team">Team</a></li>
+                  <li><a class="{{ link_class }}" href="index.html#pricing">Pricing</a></li>
+                  <li><a class="{{ link_class }}" href="index.html#contact">Contact</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div> <!-- /navbar-collapse -->
+            </nav>
+          </div> <!-- /menu -->
+
+        </div> <!-- /row -->
+      </div> <!-- container -->
+    </header>
