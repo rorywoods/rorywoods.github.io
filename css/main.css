@@ -121,6 +121,16 @@ a:visited { color: #a0a; }
   border: 0;
 }
 
+#logo{
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+  padding-top: 30px;
+  color: #000;
+}
+#logo.a{
+  color: #000;
+}
+
 /*****************************************************************************/
 /*
 /* Posts

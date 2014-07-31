@@ -48,14 +48,15 @@
 
       // Submit the form using AJAX.
       $.ajax({
-        type: 'POST',
+        dataType: 'jsonp',
         url: $(form).attr('action'),
         data: formData
       })
       .done(function(response) {
         // Set the message text.
-        $(formMessages).html(response);
+        //$(formMessages).html("Thank you for contacting us, we'll respond shortly");
 
+          $(formMessages).html('<div class="alert alert-success margin-top-40"><button type="button" class="close" data-dismiss="alert">×</button><strong>Thanks for contacting us.</strong> We will respond shortly</div>');
         // Clear the form.
         $('#contact-name').val('');
         $('#contact-email').val('');
