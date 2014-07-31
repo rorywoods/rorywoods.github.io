@@ -27,7 +27,9 @@
       offset: -80
     });
 
-    $('.venobox').venobox();
+    $('.venobox').venobox({
+	    framewidth: '500px'
+    });
 
     /* Form submission code */
     // Get the form.
