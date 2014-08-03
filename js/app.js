@@ -28,7 +28,7 @@
     });
 
     $('.venobox').venobox({
-	    framewidth: '500px'
+	    framewidth: '750px'
     });
 
     /* Form submission code */

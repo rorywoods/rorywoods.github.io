@@ -1885,3 +1885,11 @@ input[type="number"] {
 #logo a{
   color:#000;
 }
+
+.portfolio-box{
+	font-size:smaller;
+	width:100%; 
+	height:100%; 
+	float:left; 
+	padding:10px
+}
