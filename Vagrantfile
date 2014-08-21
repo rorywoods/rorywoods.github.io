@@ -129,7 +129,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   #jekyll
   config.vm.provision :shell,
-    :inline => "sudo apt-get -y install build-essential ruby-dev nodejs python-pygments gsl-bin libgsl0-dev && sudo gem install jekyll redcarpet rb-gsl --no-ri --no-rdoc"
+    :inline => "sudo apt-get -y install build-essential ruby-dev nodejs python-pygments gsl-bin libgsl0-dev git && sudo gem install github-pages rb-gsl --no-ri --no-rdoc"
 
   config.vm.host_name = "rowoco.localtest.me"
 end
