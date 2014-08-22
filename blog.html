@@ -2,107 +2,93 @@
 title: Rory Woods Consulting - Blog
 layout: default
 ---
-    <div id="highlighted" class="bg-image-field">
-      <div class="container">
+<div id="highlighted" class="bg-image-field">
+    <div class="container">
+        <div class="row">
+            <div class="highlighted-image-blog col-xs-12">
+                <div class="fade-in text-center vertical-center">
+                    <h1 class="blog-title text-color-theme">Blog</h1>
+                </div>
+            </div> <!-- /highlighted-image-blog -->
+        </div> <!-- /row -->
+    </div> <!-- /container -->
+</div> <!-- /highlighted -->
+<div id="blog" class="content region">
+    <div class="container">
         <div class="row">
 
-          <div class="highlighted-image-blog col-xs-12">
-            <div class="fade-in text-center vertical-center">
-              <h1 class="blog-title text-color-theme">Blog</h1>
-            </div>
-          </div> <!-- /highlighted-image-blog -->
+            <div class="blog-content col-xs-12 col-md-offset-2 col-md-8 block">
+                {% for post in paginator.posts %}
+                <div class="blog-post">
+                    <h3 class="blog-post-title">{{ post.title }}</h3>
 
+                    <ul class="blog-post-info list-inline">
+                        <li>{{ post.author }} on {{ post.date | date_to_string }}</li>
+                        <!--<li>Lorem</li>
+                        <li>2 comments</li>-->
+                    </ul>
+
+                    <div class="blog-post-content">
+                        {{ post.excerpt }}
+                    </div> <!-- /blog-post-content -->
+
+                    <p class="blog-post-more"><a href="{{ post.url }}">read more</a></p>
+                </div> <!-- /blog-post -->
+                {% endfor %}
+
+                {% if paginator.total_pages > 1 %}
+                <div class="text-center">
+                    <ul class="pagination">
+                        {% if paginator.previous_page %}
+                        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+                        {% else %}
+                        <li class="disabled"><a href="#">&laquo;</a></li>
+                        {% endif %}
+                        {% for page in (1..paginator.total_pages) %}
+                        {% if page == paginator.page %}
+                        <li class="active">{{ page }}</li>
+                        {% elsif page == 1 %}
+                        <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+                        {% else %}
+                        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+
+                        {% if paginator.next_page %}
+                        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
+                        {% else %}
+                        <li class="disabled"><a href="#">&raquo;</a></li>
+                        {% endif %}
+                    </ul>
+                </div> <!-- /text-center -->
+                {% endif %}
+
+            </div> <!-- /blog-content -->
         </div> <!-- /row -->
-      </div> <!-- /container -->      
-    </div> <!-- /highlighted -->
+    </div> <!-- /container -->
+</div> <!-- /content-region -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+    <span>&laquo; Prev</span>
+    {% endif %}
 
-    <div id="blog" class="content region">
-      <div class="container">
-        <div class="row">
-      
-          <div class="blog-content col-xs-12 col-md-offset-2 col-md-8 block">
-              
-            <div class="blog-post">
-              <h3 class="blog-post-title">Latest template, a top seller!</h3>
-              
-              <ul class="blog-post-info list-inline">
-                <li>Alice Doe on 16 May</li>
-                <li>Lorem</li>
-                <li>2 comments</li>
-              </ul>
-              
-              <div class="blog-post-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl risus, porta sit amet dui eget, adipiscing ornare lacus. Nunc metus dolor, blandit sed vestibulum eget, volutpat ac sem.</p>
-                <p>Suspendisse mollis pellentesque viverra. Maecenas vitae lorem urna. Nullam aliquam justo vel lorem interdum consectetur. Vivamus et molestie tellus, nec pharetra nisi. Morbi malesuada feugiat tincidunt. Nullam sit amet tempus ante. Donec ac urna tristique, dapibus magna sed, elementum tellus. Proin nulla velit, accumsan sed velit id, ornare accumsan velit. Cras erat eros, adipiscing at consectetur porta, pharetra sed erat. Vestibulum pulvinar vulputate augue a tempus. Donec ac ullamcorper lorem.</p>
-              </div> <!-- /blog-post-content -->
-              
-              <p class="blog-post-more"><a href="blog-single.html">read more</a></p>
-            </div> <!-- /blog-post -->
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <em>{{ page }}</em>
+    {% elsif page == 1 %}
+    <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
 
-            <div class="blog-post">
-              <h3 class="blog-post-title">How to manage CSS3 transitions</h3>
-              
-              <ul class="blog-post-info list-inline">
-                <li>Alice Doe on 9 May</li>
-                <li>Etiam</li>
-                <li>0 comments</li>
-              </ul>
-              
-              <div class="blog-post-content">
-                <p>Etiam urna nulla, dictum eget metus non, pretium pretium turpis. Sed ultrices, purus ac varius egestas, est diam placerat arcu, eget blandit nisl nisl sed nisi. Phasellus vulputate eu magna eu pulvinar.</p>
-                <p>Mauris luctus erat ut dolor porttitor bibendum. Suspendisse in vestibulum eros. Nam iaculis felis id bibendum vehicula. Sed blandit erat elit, non tincidunt nibh faucibus sed. Integer ullamcorper velit erat, quis tincidunt velit aliquam non. Donec lacus sapien, faucibus non congue at, pretium at est. Vestibulum at euismod quam, sed placerat tellus. Etiam eget orci at enim volutpat tristique.</p>
-              </div> <!-- /blog-post-content -->
-              
-              <p class="blog-post-more"><a href="blog-single.html">read more</a></p>
-            </div> <!-- /blog-post -->
-
-            <div class="blog-post">
-              <h3 class="blog-post-title">Latest trends on web design</h3>
-              
-              <ul class="blog-post-info list-inline">
-                <li>Alice Doe on 25 Apr</li>
-                <li>Vulputate, Nisi</li>
-                <li>0 comments</li>
-              </ul>
-              
-              <div class="blog-post-content">
-                <p>In ac vulputate nisi. Aliquam aliquam viverra magna id sollicitudin. Pellentesque vitae magna sed lorem volutpat mollis. Vestibulum et lectus adipiscing, dignissim eros at, lobortis lorem. Mauris vel egestas nisi, nec vehicula risus. In dictum mollis vulputate. Nunc vestibulum urna vitae risus tempor imperdiet. Sed lorem justo, varius vel tincidunt non, gravida vel sapien.</p>
-                <p>Duis varius nunc id semper tincidunt. Aenean sit amet velit eleifend, rhoncus metus a, feugiat enim. Sed vestibulum leo quis lectus semper, eget pulvinar ligula adipiscing. Morbi euismod leo tempor condimentum egestas. Suspendisse lobortis commodo nunc vitae rutrum. Mauris in rhoncus felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              </div> <!-- /blog-post-content -->
-              
-              <p class="blog-post-more"><a href="blog-single.html">read more</a></p>
-            </div> <!-- /blog-post -->
-
-            <div class="blog-post">
-              <h3 class="blog-post-title">How to be a JS ninja in 10 steps</h3>
-              
-              <ul class="blog-post-info list-inline">
-                <li>Alice Doe on 14 Apr</li>
-                <li>Vulputate, Nisi</li>
-                <li>0 comments</li>
-              </ul>
-              
-              <div class="blog-post-content">
-                <p>In ac vulputate nisi. Aliquam aliquam viverra magna id sollicitudin. Pellentesque vitae magna sed lorem volutpat mollis. Vestibulum et lectus adipiscing, dignissim eros at, lobortis lorem. Mauris vel egestas nisi, nec vehicula risus. In dictum mollis vulputate. Nunc vestibulum urna vitae risus tempor imperdiet. Sed lorem justo, varius vel tincidunt non, gravida vel sapien.</p>
-                <p>Duis varius nunc id semper tincidunt. Aenean sit amet velit eleifend, rhoncus metus a, feugiat enim. Sed vestibulum leo quis lectus semper, eget pulvinar ligula adipiscing. Morbi euismod leo tempor condimentum egestas. Suspendisse lobortis commodo nunc vitae rutrum. Mauris in rhoncus felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              </div> <!-- /blog-post-content -->
-              
-              <p class="blog-post-more"><a href="blog-single.html">read more</a></p>
-            </div> <!-- /blog-post -->
-              
-            <div class="text-center">
-              <ul class="pagination">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div> <!-- /text-center -->
-              
-          </div> <!-- /blog-content -->
-
-        </div> <!-- /row -->
-      </div> <!-- /container -->
-    </div> <!-- /content-region -->
-
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+    <span>Next &raquo;</span>
+    {% endif %}
+</div>
+{% endif %}

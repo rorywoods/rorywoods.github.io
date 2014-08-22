@@ -1,6 +1,11 @@
 name: Rory Woods Consulting 
+baseurl: /
 markdown: redcarpet
 highlighter: pygments
+
+paginate_path: "/blog.html"
+paginate: 5
+
 
 author:
   name: rory woods
