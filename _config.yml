@@ -1,10 +1,17 @@
 name: Rory Woods Consulting 
 markdown: redcarpet
 highlighter: pygments
+
+author:
+  name: rory woods
+  twitter: https://twitter.com/rorywoods
+  gravatar: http://www.gravatar.com/avatar/4187993599df1a9735f6a2b0d51454ac.png
+
 defaults:
   -
     scope: 
       path: ""
       type: "posts"
     values:
+      layout: "post"
       author: "rory woods"

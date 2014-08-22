@@ -11,9 +11,9 @@ layout: default
 		  <h2 class="blog-single-title text-color-theme">{{ page.title }}</h2>
 		</div>
 		<ul class="blog-post-info list-inline">
-		  <li>{{ page.author }} on {{ page.date | date_to_string }}</li>
-		  <li><a href="#">Lorem</a></li>
-		  <li>2 comments</li>
+		  <li>{{ site.author.name }} on {{ page.date | date_to_string }}</li>
+		  <!--<li><a href="#">Lorem</a></li>
+		  <li>2 comments</li>-->
 		</ul>
 	  </div> <!-- /highlighted-image-blog -->
 
@@ -35,7 +35,7 @@ layout: default
 				{{ content }}
 			  </div> <!-- /blog-single-post-content -->
 
-			  <div class="theme-comments">
+			  <div style="display:none" class="theme-comments">
 					
 				<h4 class="theme-comments-title">Comments</h4>
 				
