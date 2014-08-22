@@ -1,3 +1,10 @@
 name: Rory Woods Consulting 
 markdown: redcarpet
 highlighter: pygments
+defaults:
+  -
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      author: "rory woods"
