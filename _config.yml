@@ -3,7 +3,7 @@ baseurl: /
 markdown: redcarpet
 highlighter: pygments
 
-paginate_path: "/blog.html"
+paginate_path: "blog/page:num"
 paginate: 5
 
 
