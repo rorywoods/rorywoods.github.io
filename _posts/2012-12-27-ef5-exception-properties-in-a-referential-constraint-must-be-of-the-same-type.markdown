@@ -1,5 +1,5 @@
 ---
-title: "EF5 Exception Properties in a referential constraint must be of the same type"
+title: "EF5 Exception: Properties in a referential constraint must be of the same type"
 author: rory woods
 date: 2012-12-27 15:00:00
 layout: post

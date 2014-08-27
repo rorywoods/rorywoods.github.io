@@ -1887,18 +1887,9 @@ input[type="number"] {
   color:#000;
 }
 
-
 /***********************************/
 /***** PORTFOLIO MODAL *************/
 /***********************************/
-/*.portfolio-box{
-	font-size:smaller;
-	width:100%; 
-	height:100%; 
-	float:left; 
-	padding:10px
-}*/
-
 
 .portfolio-box{
 	padding:20px
@@ -1906,3 +1897,13 @@ input[type="number"] {
     .portfolio-box h2 {
         margin: 0;
     }
+	
+/* blog tweaks */
+#blog-single * .region{
+padding-top: 30px;
+padding-bottom: 30px;
+}
+#blog-single * .block{
+padding-top: 0;
+padding-bottom: 0;
+}

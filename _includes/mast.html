@@ -1,6 +1,10 @@
-{%  assign link_class = "" %}
+{% assign link_class = "" %}
+{% assign active_class = "" %}
+{% assign path = "/index.html" %}
 {% if page.url == "/index.html" %}
 {% assign link_class = "smoothScroll" %}
+{% assign active_class = "active" %}
+{% assign path = "" %}
 {% endif %}
     <header class="header-fixed">
       <div class="container">
@@ -20,14 +24,17 @@
               <!-- Navigation links -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-right navbar-nav">
-                  <li class="active">
-		      <a class="{{ link_class }}" href="/index.html#highlighted">Home</a>
-                  </li>
-                  <li><a class="{{ link_class }}" href="/index.html#services">Services</a></li>
-                  <li><a class="{{ link_class }}" href="/index.html#portfolio">Portfolio</a></li>
-                  <li><a class="{{ link_class }}" href="/index.html#about-us">About Us</a></li>
-                  <li><a class="{{ link_class }}" href="/index.html#contact">Contact</a></li>
+                  <li class="{{active_class}}"><a class="{{ link_class }}" href="{{ path }}#highlighted">Home</a></li>
+                  <li><a class="{{ link_class }}" href="{{ path }}#services">Services</a></li>
+                  <li><a class="{{ link_class }}" href="{{ path }}#portfolio">Portfolio</a></li>
+                  <li><a class="{{ link_class }}" href="{{ path }}#about-us">About Us</a></li>
+                  <li><a class="{{ link_class }}" href="{{ path }}#contact">Contact</a></li>
+                  {% if page.url contains "/blog/" %}
+                  <li  class="active"><a href="/blog/index.html">Blog</a></li>
+                  {% else %}
                   <li><a href="/blog/index.html">Blog</a></li>
+                  {% endif %}
+                  
                 </ul>
               </div> <!-- /navbar-collapse -->
             </nav>
