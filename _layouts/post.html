@@ -12,8 +12,14 @@ layout: default
 		</div>
 		<ul class="blog-post-info list-inline">
 		  <li>{{ page.author }} on {{ page.date | date_to_string }}</li>
-		  <!--<li><a href="#">Lorem</a></li>
-		  <li>2 comments</li>-->
+		  <li>
+			{% for cat in page.categories %}
+			{% if cat != "blog" %}
+			<a href="#">{{ cat }}</a>
+			{% endif %}
+			{% endfor %}
+		  </li>
+		  <!--<li>2 comments</li>-->
 		</ul>
 	  </div> <!-- /highlighted-image-blog -->
 
