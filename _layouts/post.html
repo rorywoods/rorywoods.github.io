@@ -2,13 +2,14 @@
 layout: default
 ---
 
+<div itemscope="" itemtype="http://schema.org/BlogPosting">
 <div id="highlighted" class="bg-color-grayLight1">
   <div class="container">
 	<div class="row">
 
 	  <div class="highlighted-blog-single col-xs-12">
 		<div class="fade-in text-center vertical-center">
-		  <h2 class="blog-single-title text-color-theme">{{ page.title }}</h2>
+		  <h2 class="blog-single-title text-color-theme" itemprop="name headline">{{ page.title }}</h2>
 		</div>
 		<ul class="blog-post-info list-inline">
 		  <li>{{ page.author }} on {{ page.date | date_to_string }}</li>
@@ -39,7 +40,8 @@ layout: default
 			  <div class="cta">
 				Technology doesn't have to be hard. <a href="{{ site.url }}/index.html#contact">Contact us</a> for help with your next technology project. 
 				
-				Rory Woods provides technology consulting to enterprises so they can concentrate on their business. Connect with Rory on <a rel="author" href="{{ site.author.gplus }}?rel=author">Google +</a>.
+				Rory Woods provides technology consulting to enterprises so they can concentrate on their business. Connect with Rory on 
+				<span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name"><a rel="author" href="{{ site.author.gplus }}?rel=author">Google +</a></span></span>.
 			  </div>
 			  
 			</div> <!-- /blog-post -->
@@ -51,3 +53,4 @@ layout: default
 	</div> <!-- /row -->
   </div> <!-- /container -->
 </div> <!-- /content -->
+</div>
