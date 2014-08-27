@@ -2,6 +2,8 @@ name: Rory Woods Consulting
 baseurl: /
 markdown: redcarpet
 highlighter: pygments
+title: Rory Woods Consulting
+description: Technology doesn't have to be hard. Contact us for help with your next technology project.
 
 paginate_path: "blog/page:num"
 paginate: 5
