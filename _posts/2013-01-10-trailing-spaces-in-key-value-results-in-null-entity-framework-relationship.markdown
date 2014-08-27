@@ -1,7 +1,7 @@
 ---
 title: "Trailing spaces in key value results in null Entity Framework relationship"
 author: rory woods
-date: 2012-01-10 15:00:00
+date: 2013-01-10 15:00:00
 layout: post
 categories: 
 - entity framework

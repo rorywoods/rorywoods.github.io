@@ -1907,3 +1907,7 @@ padding-bottom: 30px;
 padding-top: 0;
 padding-bottom: 0;
 }
+.cta{
+border-top: 1px solid #000;
+margin-top:30px;
+}
