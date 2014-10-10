@@ -8,7 +8,7 @@ As part of a large Identity and Access Management project I moved an existing AS
 
 There are a few moving parts to this solution.
 
-Turn on Windows Authentication in web.config
+Turn on Windows Authentication in web.config. Since the WIF modules are in effect they will auth the user before Windows Auth can take over and send the challenge.
 Disable Windows Authentication at root of web site in IIS, enable it just for the folder hosting the services
 Capture the wsfed auth redirect event of WIF and cancel if the request is coming from the services folder
 
