@@ -21,4 +21,4 @@ I expected EF to create the LocalDb database. A closer look at the exception rev
 </defaultConnectionFactory>
 {% endhighlight %}
 
-Not sure how but I ended up with a SQL Server LocalDb update (VS 2013 update? SQL Server Data Tools?). This verion no longer automatically creates an instance named v*version number* (e.g. v11.0 or v12.0). Instead the default instance name is MSSQLLocalDb. This is [fixed in EF 6.1.1](https://entityframework.codeplex.com/workitem/2246).
+Not sure how but I ended up with a SQL Server LocalDb update (VS 2013 update? SQL Server Data Tools?). This verion no longer automatically creates an instance named v*version number* (e.g. v11.0 or v12.0). Instead the default instance name is MSSQLLocalDb. This is [fixed in EF 6.1.1](https://entityframework.codeplex.com/workitem/2246) but many NuGet packages (e.g. ASP.NET Identity EntityFramework) target EF 6.1.0 and you'll end up with the minimal compatible version if you don't already have EF installed.
