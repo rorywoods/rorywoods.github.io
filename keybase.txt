@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/rorywoods
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rowo.co
+  * I am rorywoods (https://keybase.io/rorywoods) on keybase.
+  * I have a public key with fingerprint BD22 6C13 69DB 09AD 0E82  3617 25DC 1850 8B61 352E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101e258655b9c115caac421eee6b317bd96fc3b4405c892717cb170ed6a6da2a1e60a",
+      "fingerprint": "bd226c1369db09ad0e82361725dc18508b61352e",
+      "host": "keybase.io",
+      "key_id": "25dc18508b61352e",
+      "kid": "0101e258655b9c115caac421eee6b317bd96fc3b4405c892717cb170ed6a6da2a1e60a",
+      "uid": "fd90e2aa7a3ba592797b7d6edf594d00",
+      "username": "rorywoods"
+    },
+    "service": {
+      "hostname": "rowo.co",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1505843590,
+  "expire_in": 157680000,
+  "prev": "5537be666e4475c2785859eaba159b348a344464b97607c6e677715c0882e124",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMIgAnicrZJbiE1RGMfPjFsmSoQSyS63jLHW2nuttfd5ECkiNUnJcTvW7czshrPP
+7L1njjFJjOQ2JBHy4tY0IYTGuB8j4xJixoOkIaQwNTguIaw94cmj9bJaX7//f/2/
+r+9a/x6xooLOgUuMs4dG5Apu53ZUxRK5xPpag3uyxojXGhWq+1LLpArCZIUrjbgB
+IIAKYZtgzB0BIRaMCQtBpRThJqRcOiQlTG5ZAAvbQRRSwSEFShJGJEMMKgKYUWyk
+3HSZ8jO+mw61LZcIEQFN4kgOHCaBspFJIEVYCmhjYHMCTYyUFpZ7QaTQ4TgLVInr
+6Zp+JLvj/YP/z7mruu1S0gEKMUaZyRnWuEM5lUTJFHYsCUAEBspPs+VK077n12Q9
+TwbGqmJDl6tdoaLJRq38RbJeiYh6yfhe6AlvmS6Wh2EmiEeisCYTUVnFk7/1Se6m
+pZ6hVlQrP3C9tBGHmhShGxlCDLBtmdgBxYZakXF9lXQjAlNiA32if1S1tsTYpFwR
+QpRlUSwQtbGNHcU4g9jhpmUz07IsYnGHEkAFUYRSqscHbBspiCwj6qgy7RlxomOy
+Mm0ZuGVpFlb5ylh19cqinrGColjvXoXRbsWK+g74s3Fb3/f5uXRnx+DnDWvrwxf+
+ibp1Zld23KvX5M2ucTNmL5FHF+en7W7031yaX3v4UXxTPrw+pzn7cGXp+ZJZPRfc
+rUDvJw6avvzAp8pe5Rcftz35PPT4nSO9T86YOebg/eubiz+9vfN98tOuuVPQvb5N
+1U1HHg5KDCc/Gko/1iNxbHzLzwNPui68O/m4GQwOxJ79T41LhZ1f6/f4G/YdRf7u
+/M3tiwrbWxefy807V5kcsu3UrueNw77gl6/bO6euvnWqQ3xp73ertK2FpNry+dYz
+TfPO1JXOrju279ndvaM+tOYuZy8uDN+eDr5XbTk4P9F8c+Rx2JLae/7b2NETNsIb
+tYnGNVc6xk/a3lD54NUvVKlQuw==
+=HFjo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rorywoods
+
+==================================================================
