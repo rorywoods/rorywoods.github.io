@@ -783,7 +783,7 @@ header {
 }
 
 .main-menu .nav > li > a {
-  padding: 30px 20px;
+  padding: 40px 20px 20px 20px;
 }
 
 .main-menu .nav > li:last-child > a {
@@ -1147,7 +1147,7 @@ header {
 }
 
 .panels .panels-text {
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 .panels .panels-text h6 {
@@ -1885,7 +1885,7 @@ input[type="number"] {
 /************* LOGO ****************/
 /***********************************/
 #logo{
-  padding-top:30px;
+  padding-top:5px;
   font-size: x-large;
 }
 #logo a{

@@ -39,8 +39,8 @@
     }
 
     if (!$errors) {
-      $mail_to = 'info@rowo.co';
-      $subject = "RoWoCo Site Inquiry: " . $_POST['contact-subject'];
+      $mail_to = 'info@colibrisdigtal.com';
+      $subject = "Site Inquiry: " . $_POST['contact-subject'];
       $message  = 'From: ' . $_POST['contact-name'] . "\n";
       $message .= 'Email: ' . $_POST['contact-email'] . "\n\n";
       $message .= "Message:\n" . $_POST['contact-message'] . "\n";
