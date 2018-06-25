@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Colibris Digital
+title: COLIBRIS DIGITAL
 email: info@colibrisdigital.com
 description: >- # this means to ignore newlines until "baseurl:"
   Providing software development and guidance to customers of all sizes.
